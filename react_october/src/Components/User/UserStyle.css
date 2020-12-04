@@ -1,0 +1,26 @@
+body {
+    background: tomato;
+    padding: 50px;
+
+}
+div > div > div {
+    min-width: 160px;
+    padding: 5px;
+    background: #61dafb;
+    margin: 20px auto;
+  
+}
+
+div {
+    min-width: 250px;
+    margin: 25px 20px;
+    border: green 1px solid;
+    background: #61dafb;
+}
+
+ div > div {
+     margin: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     background: aquamarine;
+ }
