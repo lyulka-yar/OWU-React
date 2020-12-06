@@ -1,0 +1,21 @@
+div > div{
+
+    max-width: fit-content;
+    margin: 15px auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div > div > div > div {
+    border: 1px solid tomato;
+    background: coral;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+button {
+    width: 100%;
+    padding: 2px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 5px;
+}
