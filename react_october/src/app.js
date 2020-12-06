@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Users from "./Components/User/Users";
+import Users from "./Components/Users/Users";
 import Posts from "./Components/Posts/Posts";
 import Todo from "./Components/Todos/Todos";
 import './App.css';
