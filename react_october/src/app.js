@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import Users from "./Components/User/Users";
 import Posts from "./Components/Posts/Posts";
-import Todo from "./Components/Todos/Todo";
+import Todo from "./Components/Todos/Todos";
 import './App.css';
 
 class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className='wrap'>
                 <hr/>
                 <div>
                     -------------------USERS------------------- <Users />
@@ -29,8 +29,7 @@ class App extends Component {
                     <br/>
                 </div>
             </div>
-        )
-            ;
+        );
 
     }
 }
