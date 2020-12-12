@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 
+
 class InputSubmit extends Component {
     render() {
+        let {inputType,inputAddNum} = this.props;
         return (
             <div>
                     <span className='title m'>type number:</span> <br/>
-                    <input className={'submit'} type="text"/>
-                    <input className={'submit'} value={'submit'} type="button"/>
+                {
+
+                    <input onChange={event => inputAddNum(event.target.value)}
+                           className={'submit'}
+                           type="text"/>
+                }
+                <button onClick={inputType} className={'submit'}>submit</button>
 
             </div>
         );
