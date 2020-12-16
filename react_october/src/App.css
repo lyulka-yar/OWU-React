@@ -39,19 +39,23 @@
 body{
   padding: 15px 50px;
   background: darkseagreen;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: 15px auto;
+border: 1px solid red;
 }
-
-
-
-
 .wrap {
   display: flex;
-}
-body{
-  padding: 15px 50px;
-  background: darkseagreen;
-  max-width: 1200px;
+  justify-content: space-around;
 
 }
+.wrap a {
+  text-decoration: none;
+  color:  blueviolet;
+  margin: 5px;
+}
+
+.user, .post, .comment {
+  width: 33.33%;
+  text-align: center;
+}
+
