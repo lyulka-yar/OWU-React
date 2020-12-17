@@ -1,61 +1,82 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
-body{
-  padding: 15px 50px;
-  background: darkseagreen;
-  max-width: 1400px;
-  margin: 15px auto;
-border: 1px solid red;
-}
-.wrap {
-  display: flex;
-  justify-content: space-around;
 
+body {
+    padding: 15px 50px;
+    background: darkseagreen;
+    max-width: 1400px;
+    margin: 15px auto;
+    border: 1px solid red;
 }
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.olo {
+    background: tomato;
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: white;
+}
+.olo:hover {
+    background: #cd2c10;
+}
+ .card {
+     display: flex;
+     justify-content: space-between;
+     border: 2px dotted red;
+     margin: 5px;
+     padding: 15px;
+ }
+
 .wrap a {
-  text-decoration: none;
-  color:  blueviolet;
-  margin: 5px;
+    text-decoration: none;
+
+    margin: 5px;
 }
 
 .user, .post, .comment {
-  width: 33.33%;
-  text-align: center;
+    width: 33.33%;
+    text-align: center;
 }
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Post from "./Post";
 import AppServices from "../services/AppServices";
+import {Link, Route, withRouter} from "react-router-dom";
 
 class Posts extends Component {
     appService = new AppServices();
@@ -14,15 +15,14 @@ class Posts extends Component {
     render() {
 
         let {posts} = this.state;
+        let {match:{url},match} = this.props;
         return (
             <div>
-                {posts.map(value => <Post post={value} key={value.id}/>)}
-
+                {posts.map(value => <Post post={value} key={value.id} />)}
             </div>
         );
-
 
     }
 }
 
-export default Posts;
+export default withRouter(Posts);
