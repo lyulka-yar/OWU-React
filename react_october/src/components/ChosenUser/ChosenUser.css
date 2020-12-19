@@ -1,0 +1,30 @@
+.chosen {
+    width: max-content;
+    background: bisque;
+    padding: 15px;
+    color: #282c34;
+    border: 5px dashed black;
+    border-radius: 7px;
+}
+
+.user-title {
+    color: #282c34;
+    font-weight: bold;
+}
+
+.chosen-title {
+    color: #0953e0;
+    font-weight: bold;
+}
+
+.sup {
+    font-size: 12px;
+    font-weight: normal;
+    color: grey;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.up {
+    text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+.btn-info-card {
+    background: crimson;
+    color: white;
+    padding: 4px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.btn-info-card:hover {
+    background-color: #961907;
+}

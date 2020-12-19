@@ -1,0 +1,29 @@
+.wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.users-wrapper {
+    width: 430px;
+    height: fit-content;
+    padding: 0 5px 25px 20px;
+    background: #05414f;
+    color: white;
+    border-radius: 10px;
+}
+.f20 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.chosen-user-info {
+    margin-right: 250px;
+    margin-top: 5%;
+    width: 400px;
+    height: fit-content;
+    padding: 10px 15px;
+    color: white;
+
+}

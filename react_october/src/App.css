@@ -39,44 +39,19 @@
 
 body {
     padding: 15px 50px;
-    background: darkseagreen;
     max-width: 1400px;
-    margin: 15px auto;
+    margin: 5px 10px;
     border: 1px solid red;
+    background-image: url("https://cdn-images-1.medium.com/max/2000/1*qXcjSfRj0C0ir2yMsYiRyw.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.wrap {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.olo {
-    background: tomato;
-    width: 100px;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 5px;
-    color: white;
-}
-.olo:hover {
-    background: #cd2c10;
-}
- .card {
-     display: flex;
-     justify-content: space-between;
-     border: 2px dotted red;
-     margin: 5px;
-     padding: 15px;
- }
 
-.wrap a {
-    text-decoration: none;
-
-    margin: 5px;
-}
-
-.user, .post, .comment {
-    width: 33.33%;
-    text-align: center;
-}
 
