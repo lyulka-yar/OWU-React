@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './user.css'
 import {withRouter} from "react-router-dom";
-import Details from "../../Buttons/moreInfo/Details";
+import Details from "../../Buttons/Details/Details";
 class User extends Component {
 
     render() {

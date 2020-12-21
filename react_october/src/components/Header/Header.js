@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
 import './Header.css';
-import HeaderItem from "../HeaderItem/HeaderItem";
+import HeaderItem from "./HeaderItem/HeaderItem";
 
 
 class Header extends Component {
 
-    headerArr = ['home', 'users','posts','comments']
+    headerArr = ['home', 'users','announcements','settings']
 
     render() {
 
             return (
                 <div className={'header-title'}>
                     {this.headerArr.map(value => <HeaderItem item={value} key={value}/>)}
-
                 </div>
             );
 

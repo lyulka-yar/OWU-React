@@ -43,7 +43,7 @@ body {
     margin: 5px 10px;
     border: 1px solid red;
     background-image: url("https://cdn-images-1.medium.com/max/2000/1*qXcjSfRj0C0ir2yMsYiRyw.jpeg");
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }

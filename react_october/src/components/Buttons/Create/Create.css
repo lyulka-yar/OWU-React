@@ -1,0 +1,10 @@
+.btn-create-new-user-card {
+    border-radius: 5px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    background: darkgreen;
+    padding: 7px 10px;
+}
+.btn-create-new-user-card:hover {
+    background: #01cf01;
+}

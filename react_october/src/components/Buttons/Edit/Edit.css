@@ -1,0 +1,15 @@
+.btn-edit-user-card {
+    background: darkgreen;
+    padding: 5px 5px;
+    margin-right: 8px;
+    margin-top: 10px;
+    border: none;
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #282c34;
+    text-transform: uppercase;
+}
+.btn-edit-user-card:hover {
+    background: #01a001;
+
+}

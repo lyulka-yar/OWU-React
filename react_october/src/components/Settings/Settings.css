@@ -1,0 +1,19 @@
+.set-wrapper {
+    background: bisque;
+    margin-top: 15%;
+    text-align: center;
+    min-width: 350px;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 350px;
+    border-radius: 15px;
+
+}
+.set-wrapper p {
+    padding: 130px 0 0 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-style: italic;
+
+}

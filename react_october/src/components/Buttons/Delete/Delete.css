@@ -1,0 +1,14 @@
+.btn-delete-user-card, .btn-close-user-card {
+    background: #961907;
+    padding: 5px 5px;
+    margin-top: 10px;
+    border: none;
+    width: 60px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #282c34;
+    text-transform: uppercase;
+
+}
+.btn-delete-user-card:hover,.btn-close-user-card:hover {
+    background: #ea3417;
+}

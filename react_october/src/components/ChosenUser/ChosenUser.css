@@ -1,10 +1,12 @@
 .chosen {
-    width: max-content;
+    min-width: 390px;
     background: bisque;
     padding: 15px;
     color: #282c34;
     border: 5px dashed black;
     border-radius: 7px;
+    margin-top: 30px;
+
 }
 
 .user-title {
@@ -27,4 +29,9 @@
 
 .up {
     text-transform: uppercase;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 100px;
 }
