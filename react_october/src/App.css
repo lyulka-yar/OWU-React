@@ -43,14 +43,8 @@ body{
   margin: 0 auto;
 }
 
-
-
-
-.wrap {
-  display: flex;
-}
 body{
-  padding: 15px 50px;
+  padding: 35px 50px;
   background: darkseagreen;
   max-width: 1200px;
 
