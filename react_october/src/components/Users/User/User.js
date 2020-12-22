@@ -5,9 +5,8 @@ import Details from "../../Buttons/Details/Details";
 class User extends Component {
 
     render() {
-
         const {user, user: {id, name},chosenUser} = this.props;
-        console.log(user);
+
         return (
             <div className={'user-wrapper'}>
                 {id}{'. '}

@@ -39,6 +39,7 @@ class Users extends Component {
         const {users: old} = this.state;
         const users = old.filter(user => user.id !== id);
         this.setState({users});
+        this.setState({chosenUser: null})
         let {history} = this.props;
         history.push('/users');
     }
@@ -58,7 +59,7 @@ class Users extends Component {
         if (btnType === 'save') {
             const users = this.state.users.filter(user => user.id !== stateFromModal.id);
             users.push(stateFromModal);
-        this.setState({chosenUser:users});
+        this.setState({chosenUser:stateFromModal});
         users.sort((a,b) => {
             return a.id - b.id
         })
