@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
+import './App.css';
+import Planets from "./components/Planets/Planets";
+
 
 class App extends Component {
+
+
     render() {
+
         return (
             <div>
-                
+    <Planets/>
+
             </div>
         );
     }
