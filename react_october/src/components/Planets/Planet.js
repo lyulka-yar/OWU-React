@@ -5,7 +5,7 @@ class Planet extends Component {
         const { planet } = this.props;
         return (
             <div>
-
+                {planet.name}
             </div>
         );
     }
