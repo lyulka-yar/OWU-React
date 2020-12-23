@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import Todo from '../Todos/Todo';
+import Todo from "./Todo";
+
+
 
 class Todos extends Component {
 

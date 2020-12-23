@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Users from "./Components/Users/Users";
-import Posts from "./Components/Posts/Posts";
-import Todo from "./Components/Todos/Todos";
+import Posts from "./components/Posts/Posts";
 import './App.css';
+import Users from "./components/Users/Users";
+import Todos from "./components/Todos/Todos";
 
 class App extends Component {
 
@@ -23,7 +23,7 @@ class App extends Component {
                 <hr/>
                 <br/>
                 <div>
-                    -------------------TODOS------------------- <Todo />
+                    -------------------TODOS------------------- <Todos />
                     <br/>
                     <hr/>
                     <br/>
@@ -33,5 +33,7 @@ class App extends Component {
 
     }
 }
+
+
 
 export default App;
