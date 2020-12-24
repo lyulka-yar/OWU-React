@@ -5,13 +5,11 @@ import Planets from "./components/Planets/Planets";
 
 class App extends Component {
 
-
     render() {
 
         return (
             <div>
-    <Planets/>
-
+                <Planets/>
             </div>
         );
     }

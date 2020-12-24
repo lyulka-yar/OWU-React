@@ -2,13 +2,20 @@ import React, {Component} from 'react';
 
 
 class AppServices extends Component {
-    url = 'https://swapi.dev/api/planets/';
+    baseUrl = 'https://swapi.dev/api/planets/';
 
-   async getAll () {
-        return await fetch(this.url)
+   getAll () {
+        return fetch(this.baseUrl)
            .then(response => response.json());
 
     }
+
+    doFetch(url){
+        return fetch(url)
+            .then(response => response.json());
+
+    }
 }
+
 
 export default AppServices;
