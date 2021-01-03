@@ -1,0 +1,36 @@
+.planet-full_info {
+    box-sizing: border-box;
+    background: wheat;
+    max-width: 300px;
+    margin: 10px 0;
+    padding: 5px 25px 10px;
+    border-radius: 25px;
+    box-shadow: #5a5959 6px -4px 9px;
+}
+.info {
+    background: darkgray;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    display: block;
+    width: 50px;
+    text-align: center;
+    transition: all .4s;
+}
+.info:hover {
+    background: #5a5959;
+}
+
+.closeBtn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 90%;
+    padding: 0 5px;
+    background: tomato;
+    width: fit-content;
+    cursor: pointer;
+
+}
+
