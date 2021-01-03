@@ -1,41 +1,42 @@
 import React, {Component} from 'react';
 import AppServices from "../services/AppServices";
 import Planet from "./Planet";
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    withRouter
+} from "react-router-dom";
 
 class Planets extends Component {
-    state = {response: null};
+    state = {response: []};
     appService = new AppServices();
-
     componentDidMount() {
-
-        this.appService.getAll().then(response => this.setState({response}))
-
+        this.appService.getAll().then(response => this.setState({response}));
     }
-
     nextPlanets = () => {
         const {response: {next}} = this.state;
-       this.appService.doFetch(next).then(response => this.setState({response}))
+        this.appService.doFetch(next).then(response => this.setState({response}))
     }
-    previousPlanets=()=> {
+    previousPlanets = () => {
         const {response: {previous}} = this.state;
         this.appService.doFetch(previous).then(response => this.setState({response}))
     }
-
     render() {
         const {response} = this.state;
+        let {match:{name}} = this.props;
         console.log(response);
-
         if (!response) {
             return <h1>Loading...</h1>
         }
-        const num = response.count / 10
+        const num = response.count / 10;
 
         return (
             <div>
                 <h2>{num}</h2>
                 {
-                    response.results.map((value, index) => (<Planet planet={value} key={value.name}/>))
+                    response.results && response.results.map((value) => (<Planet planet={value} key={value.id}/>))
                 }
                 <button onClick={this.previousPlanets} disabled={!response.previous}>previousPlanets</button>
                 <button onClick={this.nextPlanets} disabled={!response.next}>nextPlanets</button>
@@ -44,7 +45,6 @@ class Planets extends Component {
     }
 
 
-
 }
 
-export default Planets;
+export default withRouter(Planets);
